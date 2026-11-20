@@ -4,8 +4,8 @@
 
 ## 怎麼取得資料
 
-1. 從雲端下載 `raw.zip`:**(雲端連結待補)**
-2. 解壓縮後放到這個資料夾，結構要像這樣:
+1. 從 Google Drive 下載壓縮檔:https://drive.google.com/file/d/1wxe0AJ0WzD7yyA3TIsjO7azjYhr4cfri/view?usp=sharing
+2. 解壓縮後放到這個資料夾，確認結構像下面這樣(`data/raw/112S4/…` 等 12 個季別資料夾):
 
 ```
 data/
@@ -18,6 +18,12 @@ data/
 │   └── f_...                    新北市，同上
 └── processed/           清理後資料，由 code/preprocessing 的程式產生，不用下載
 ```
+
+## 前處理後的資料不要上傳
+
+- 負責前處理(PRE01、PRE02)的組員跑完程式後，**不要把 `data/processed/` 的資料 push 到 GitHub**,也不用上傳到雲端。
+- 上傳的是**程式**(`code/preprocessing/`)和**篩選流程表**(`analysis/preprocessing/`)。其他組員拿到程式後，在自己電腦執行一次，就會產生一模一樣的資料。
+- `.gitignore` 已排除整個 `data/`,正常操作不會被加入。如果原始檔控制頁出現 `data/` 底下的檔案，代表設定被改掉了，不要 commit,先在群組說。
 
 雲端失效時，也可以直接從政府網站重新下載：在專案根目錄執行 `python code/download_data.py`(約 1 分鐘)。
 

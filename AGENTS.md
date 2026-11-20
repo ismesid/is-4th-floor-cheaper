@@ -17,7 +17,7 @@
 1. 回覆和文件一律用**繁體中文、臺灣用語**;技術名詞可保留英文。
 2. 分析一律用 **Python**:pandas、scipy.stats、statsmodels(迴歸、ANOVA)、scikit-learn、matplotlib。套件列在 `requirements.txt`。
 3. 這是**公開 repo**。不可以寫入任何人的真實姓名、學號、email、密碼或 API key。組員一律用 **GitHub 帳號名稱**稱呼。開始工作時，若不知道使用者的 GitHub 帳號，先問。
-4. 不可以把 `data/` 裡的資料加入 git(已在 `.gitignore` 排除)。
+4. 不可以把 `data/` 裡的資料加入 git(已在 `.gitignore` 排除)。原始資料用雲端分享(連結在 `data/README.md`);**前處理產生的 `data/processed/` 也不上傳**,只上傳產生它的程式和篩選流程表，其他組員自己執行程式重建。不可以用 `git add -f` 強制加入資料。
 
 ## 二、計畫閘門(最重要)
 
