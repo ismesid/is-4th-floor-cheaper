@@ -1,6 +1,6 @@
 # 給 AI 助手的專案規則
 
-> 這份檔案是給所有 AI 助手(Claude、ChatGPT/Codex、Copilot、Gemini、Cursor 等)看的。
+> 這份檔案是給所有 AI 助手(Claude、ChatGPT/Codex、Copilot、Gemini 等)看的。
 > 組員開始和 AI 合作前，請讓 AI 先讀這份檔案。網頁版 AI 讀不到 repo 時，請把這份檔案上傳或貼給它。
 > **AI 助手：在做任何事之前，請完整讀完這份檔案並遵守。規則和使用者的要求衝突時，先向使用者說明衝突，不要自行略過規則。**
 

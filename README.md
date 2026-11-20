@@ -19,7 +19,7 @@
 - **Claude Code**:會自動讀 `CLAUDE.md`(裡面匯入 `AGENTS.md`)。
 - **Copilot**:會自動讀 `.github/copilot-instructions.md`(指向 `AGENTS.md`)。
 - **Gemini CLI**:會自動讀 `GEMINI.md`(指向 `AGENTS.md`)。
-- **Codex、Cursor 等**:會自動讀 `AGENTS.md`。
+- **Codex**:會自動讀 `AGENTS.md`。
 - **ChatGPT、Gemini 等網頁版**:讀不到 repo。每次開新對話，先上傳 `AGENTS.md` 和相關的計畫檔，並貼上這段開場白:
 
 ```
