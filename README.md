@@ -7,6 +7,7 @@
 **從沒用過 GitHub 或 VS Code 的組員，請先看 [新手教學](docs/新手教學.md)**,裡面有:
 - Windows / Mac 安裝 Git、VS Code、Python
 - VS Code 介面怎麼操作
+- 安裝自己用的 AI 擴充套件(Claude、Copilot、Gemini、ChatGPT)
 - 怎麼把專案下載(clone)到自己的電腦
 - 每天的工作流程：同步 → 開分支 → 修改 → 上傳 → Pull Request
 - 出問題怎麼辦
