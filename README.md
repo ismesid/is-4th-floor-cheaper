@@ -51,7 +51,7 @@
 
 | 要改的東西 | 做法 |
 |---|---|
-| `plan/`、`code/`、`analysis/`、規則檔 | 開分支 → Pull Request → 另一位組員 Approve 後合併 |
+| `plan/`、`code/`、`analysis/`、規則檔 | 開分支 → Pull Request → 由 repo 管理者 `ismesid` 合併 |
 | `report/` 的 md、`docs/`、錯字 | 可以直接推到 `main` |
 
 - 開工前先同步(Pull),收工前一定要上傳(Push)。
