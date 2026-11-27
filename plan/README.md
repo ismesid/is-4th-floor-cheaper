@@ -6,7 +6,7 @@
 
 ```
 提出問題 → AI 寫計畫 v1 → 獨立 AI 第一次審查 → 修改成 v2
-        → 獨立 AI 第二次審查 → 通過 → Pull Request 由另一位組員 Approve
+        → 獨立 AI 第二次審查 → 通過 → Pull Request 由 repo 管理者 ismesid 合併
         → 合併並打 tag(例如 IN02-v2-locked)→ 鎖定 → 才能寫程式
 ```
 
