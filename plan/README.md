@@ -16,9 +16,9 @@
 
 ## 目前狀態
 
-- **最新計畫**:PRE01 v2 第二次審查**通過**(2026-11-27),待鎖定。PRE02 v3 第三次審查**通過**(2026-11-27),待鎖定。其餘 7 份仍是 v1 草稿。
-- **下一步**:PRE01 v2、PRE02 v3 一起進入鎖定流程(PR 由負責人以外的組員 Approve → 合併 → 打 tag)。
-- **連帶要改的下游計畫**:IN02 的判讀改用 PRE02 v2 的分類表(「Holm 後顯著」);IN03 的 M4 不可同時放 `elevator` 和 `C(btype)`;IN03、IN04 要寫明用哪一個增建變數;IN04 S5、S6 改用 PRE01 v2 的旗標、`age0`/`age_neg` 和 `price_ping_total`;各計畫第 7 節寫出各族的 m。
+- **最新計畫**:PRE01 v2、PRE02 v3 已**鎖定**(2026-11-27,tag `PRE01-v2-locked`、`PRE02-v3-locked`)。其餘 7 份仍是 v1 草稿。
+- **下一步**:(1) 依 PRE01 v2、PRE02 v3 撰寫清理與切分程式(`code/preprocessing/`)。(2) 下游計畫(IN01–IN04、EX01–EX03)依新的總則修改並送審。
+- **連帶要改的下游計畫**(PRE02 v3 第三次審查 S5、S6 補充:IN01 的 Welch t 檢定要改成 OLS + 叢集穩健標準誤；各計畫第 7 節同時寫出雙尾 m 與 TOST m;IN03 補 H-P1/H-P2 對照表):IN02 的判讀改用 PRE02 v2 的分類表(「Holm 後顯著」);IN03 的 M4 不可同時放 `elevator` 和 `C(btype)`;IN03、IN04 要寫明用哪一個增建變數;IN04 S5、S6 改用 PRE01 v2 的旗標、`age0`/`age_neg` 和 `price_ping_total`;各計畫第 7 節寫出各族的 m。
 
 ## 待使用者確認事項
 
@@ -34,8 +34,8 @@
 
 | 類別 | 編號 | 主題 | 負責人(GitHub) | 最新版本 | 狀態 | 鎖定 tag | 執行進度 |
 |---|---|---|---|---|---|---|---|
-| preprocessing | PRE01 | 資料清理與變數定義 | `ismesid` | v2 | 待使用者確認(第二次審查通過) | | |
-| preprocessing | PRE02 | 樣本切分與分析總則 | `ismesid` | v3 | 待使用者確認(第三次審查通過) | | |
+| preprocessing | PRE01 | 資料清理與變數定義 | `ismesid` | v2 | 鎖定 | `PRE01-v2-locked` | 程式未開始 |
+| preprocessing | PRE02 | 樣本切分與分析總則 | `ismesid` | v3 | 鎖定 | `PRE02-v3-locked` | 程式未開始 |
 | inclass_analysis | IN01 | t 檢定：現象確認 | 未分配 | v1 | 草稿 | | |
 | inclass_analysis | IN02 | 雙因子 ANOVA:忌諱還是電梯(主要假設 H-P1) | 未分配 | v1 | 草稿 | | |
 | inclass_analysis | IN03 | 複迴歸：控制條件後的 4 樓效果(主要假設 H-P2) | 未分配 | v1 | 草稿 | | |
@@ -105,7 +105,8 @@ plan/
 - [x] PRE01、PRE02 第二次獨立審查(2026-11-27:PRE01 通過;PRE02 需修改 1 項)
 - [x] PRE02 v3(2026-11-27,`ismesid`)
 - [x] PRE02 v3 第三次獨立審查(2026-11-27,通過)
-- [ ] PRE01 v2、PRE02 v3 鎖定
+- [x] PRE01 v2、PRE02 v3 鎖定(2026-11-27,PR #1)
+- [ ] PRE01 清理程式、PRE02 切分程式
 
 ## 變更紀錄
 
@@ -119,3 +120,4 @@ plan/
 | 2026-11-27 | PRE01 v2 第二次審查通過；PRE02 v2 第二次審查需修改 1 項，撰寫 v3(`ismesid`) |
 | 2026-11-27 | PRE02 v3 第三次審查通過。依審查 S1 修正 v3 第 8 節的排版錯誤(`lineterminator` 的 `
 ` 被寫成真正的換行字元),只改字元、不改規則，未再送審 |
+| 2026-11-27 | PRE01 v2、PRE02 v3 鎖定:PR #1 由組員 `james20051004-ship-it` 合併(merge commit `9a46dc1`)。GitHub 上未留下 Approve 審核紀錄，經負責人 `ismesid` 決定，以組員合併視為確認，打 tag `PRE01-v2-locked`、`PRE02-v3-locked` |
